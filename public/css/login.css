@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+:root{
+/*Dark Mode - defult*/
+    --PrimaryColor: #0b0c10;
+    --SecondaryColor: #161b21;
+    --NeutralText: #c5c6c7;
+    --NeutralBackground:#1b1c20;
+    --Background: #1f2833;
+    --Accent: #66fcf1;
+    --HighlightLinks:#45a29e ;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 300px);
+    padding: 20px;
+}
+
+.login-box {
+    position: fixed;
+    margin-top: 15%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h1 {
+    font-family: roboto;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-family: roboto;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    filter: brightness(75%);
+}
+
+.input-group input {
+    font-family: roboto;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    font-family: roboto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.forgot-password {
+    font-family: roboto;
+    color: black;
+    filter: brightness(75%);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    font-family: roboto;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#copywtier{
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+}

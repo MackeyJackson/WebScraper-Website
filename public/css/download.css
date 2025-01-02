@@ -1,0 +1,129 @@
+:root{
+/*Dark Mode - defult*/
+    --PrimaryColor: #0b0c10;
+    --SecondaryColor: #161b21;
+    --NeutralText: #c5c6c7;
+    --NeutralBackground:#1b1c20;
+    --Background: #1f2833;
+    --Accent: #66fcf1;
+    --HighlightLinks:#45a29e ;
+}
+.download-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.download-list {
+    background: var(--Background);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: roboto;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    transition: background-color 0.3s;
+}
+
+.download-item:last-child {
+    border-bottom: none;
+}
+
+.download-item:hover {
+    filter: brightness(50%);
+}
+
+.fas {
+    font-size: 24px;
+    margin-right: 15px;
+    color: white;
+}
+
+.file-info {
+    flex-grow: 1;
+}
+
+.file-name {
+    color: var(--Accent);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.file-desc {
+    font-size: 0.9em;
+    color: white;
+}
+
+.download-button {
+    background-color:var(--SecondaryColor);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    filter: brightness(150%);
+}
+body{
+    overflow: hidden;
+}
+#copywtier{
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+}
+#blur{
+    top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: red;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    backdrop-filter: blur(4px); /* Blur the background */
+    -webkit-backdrop-filter: blur(4px); /* For Safari */
+    z-index: 2;
+  }
+  #loginerror{
+    color: var(--Accent);
+    font-family: roboto;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 30vh;
+    
+  }
+  #loginb{
+    background-color: black;
+    font-family: roboto;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    font-family: roboto;
+    background-color: #17141d;
+    color: white;
+    outline: white 3px solid;
+    border-radius: 6px;
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  #loginb:hover{
+    cursor: pointer;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  #loginb, #loginerror, #blur{
+    visibility: hidden;
+  }
+#copywtier{
+    z-index: 1;
+}

@@ -1,0 +1,480 @@
+/* Root stuff */
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+:root{
+/*Dark Mode - defult*/
+    --PrimaryColor: #0b0c10;
+    --SecondaryColor: #161b21;
+    --NeutralText: #c5c6c7;
+    --NeutralBackground:#1b1c20;
+    --Background: #1f2833;
+    --Accent: #66fcf1;
+    --HighlightLinks:#45a29e ;
+}
+header {
+    width: 100%;
+    max-width: 100%;
+    height: 5vh;
+    background-color: var(--PrimaryColor);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    min-height: 800vh;
+    background-color: var(--SecondaryColor);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.languageSelectionDropdown {
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    text-align: right;
+    right: 12.5%;
+    top: 0;
+    position: absolute !important;
+    z-index: 1000000000;
+}
+#LangBtn{
+    background-color: inherit;
+    border: none;
+    height: 5vh;
+    font-family: Roboto;
+    font-size: medium;
+    font-weight:600;
+    color: var(--NeutralText);
+    text-align: center;
+    width: fit-content;
+}
+#LangBtn:after {
+    content: "\f0d7"; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+    margin-left: 8px; 
+}
+#LangBtn:hover{
+    filter: brightness(50%);
+
+}
+.languages {
+    position: absolute;
+    display: none;
+    background-color: var(--PrimaryColor);
+    font-family: Roboto;
+    font-size: medium;
+    font-weight:600;
+    color: var(--NeutralText);
+    text-align: center;
+    width: fit-content;
+    right: 0;
+    justify-content: center;
+    z-index: 10000000 !important;
+}
+
+.languages a {
+    color: var(--NeutralText);
+    text-decoration: none;
+    font-family: Roboto;
+    display: block;
+    padding-left: 10px;
+    z-index: 1000000000;
+    position: relative;
+}
+.languages img{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    right: 45px;
+    padding-top: 5px;
+    vertical-align: middle;
+    z-index: 1000000000;
+}
+
+.languages a:hover {
+    background-color: var(--NeutralBackground);
+    border: 2px solid var(--NeutralText);
+    cursor: pointer;
+    z-index: 1000000000;
+}
+.languages.show {
+    display: block;
+    position: relative;
+    z-index: 100000000 !important;
+}
+
+.languages img, #LangBtn img{
+    width: 15px;
+    height: 10;
+    z-index: 1000000000 !important;
+}
+#LangDropdown{
+    z-index: 1000000000 !important;
+}
+#logoIMG{
+    position: absolute;
+    height: 2.5vh;
+    bottom: 1.25vh;
+    margin-left: 15px;
+    border-radius: 3px;
+    z-index: 1000000000 !important;
+}
+#logoIMG:hover{
+    background-color: var(--Background);
+    cursor: pointer;
+    /*border: 0.5vh solid var(--Background);*/
+    /*bottom: 0.5vh;*/
+    filter: brightness(50%);
+    z-index: 1000000000 !important;
+}
+#databaseTop, #AboutTop, #QueriesTop{
+    color: white;
+    font-family: Roboto;
+    font-weight:600;
+    text-decoration: none;
+    text-align: center;
+    
+}
+#databaseTop:hover, #AboutTop:hover, #QueriesTop:hover{
+    filter: brightness(50%);
+}
+#databaseTop {
+    margin-left: 12.5%;
+    float: left;
+}
+#AboutTop{
+    margin-left: 15%;
+    float: left;
+}
+#QueriesTop{
+    float: right;
+    margin: 0 auto;
+
+}
+/* ---end of root---*/
+
+footer {
+    justify-content: center;
+    font-family: roboto;
+    background: var(--PrimaryColor);
+    color: white;
+    margin-top: 4rem;
+    z-index: 98;
+    position: absolute;
+    bottom: -800vh;
+    left: 0;
+    width: 100vw;
+    padding-top: 2rem;;
+}
+.copyright {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background: var(--SecondaryColor);
+    margin: 3rem;
+    margin-right: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5%;
+    width: 90%;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content #footertitle{
+    color: F2E9E4;
+}
+.back-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: var(--Accent);
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.back-to-top:hover {
+    background-color:   var(--Accent);
+}
+.links {
+    margin: 20px 0; 
+}
+
+.back-to-top, .source-link {
+    margin-right: 15px;
+    text-decoration: none; 
+    color: var(--Accent); 
+    font-weight: bold; 
+}
+.footer-content #footertitle{
+    color: var(--Accent);
+}
+.back-to-top:hover,
+.source-link:hover {
+    text-decoration: underline; 
+}
+#footertitle {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+    clip-path: inset(0 10% 0 10%);
+    padding-bottom: 0.5rem;
+}
+#par{
+    font-size: 20px;
+}
+
+.menuContainer{
+    background-color: transparent;
+    width: 2%;
+    height: 80%;
+    right: 15px;
+    top: 10%;
+    position: absolute;
+}
+#line1, #line2, #line3{
+    float: right;
+    background-color: white;
+    margin-top: 20%;
+    padding-top: 0%;
+    height: 10%;
+    border-radius: 12px;
+    width: 90%;
+    margin-left: 5%;
+    border-width: 50px;
+    transition: width 0.5s ease;
+}
+#line1{
+    margin-top: 10%;
+    width: 50%;
+}
+#line2, #line3{
+    padding-top: 2%;
+}
+#line2{
+    width: 75%;
+}
+.menuContainer:hover #line1, .menuContainer:hover #line2, .menuContainer:hover #line3{
+    filter: brightness(50%);
+    
+}
+.menuContainer:hover{
+    cursor: pointer;
+}
+#line1.expand {
+    width: 100%;
+}
+#line3.expand {
+    width: 50%;
+}
+#sidebar{
+    margin-top: 5vh;
+    float: right;
+    right: 0;
+    width: 9.5vw;
+    height: 80%;
+    position: fixed;
+    background-color: var(--PrimaryColor);
+    outline: 2px solid white;
+    visibility: hidden;
+    z-index: 100000000000;
+    contain: content;
+    justify-content: center;
+}
+#sidebar.expand{
+    visibility: visible;
+}
+#Account, #Contact, #Settings, #Pricing{
+    word-break: normal;
+    white-space: nowrap;
+    left: 35%;
+    top: 0;
+    font-size: 1.25rem;
+    position: relative;
+    float: left;
+    color: white;
+    font-family: roboto;
+    margin-top: 50%;
+    margin-right: 100%;
+    z-index: 500;
+}
+#Pricing::before{
+    margin-left: -3vw;
+    margin-right: 2vw;
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e7";
+    font-weight: 900;
+}
+#Account::before{
+    margin-left: -3vw;
+    margin-right: 2vw;
+    font-family: "Font Awesome 6 Free";
+    content: "\f007";
+}
+#Contact::before{
+    margin-left: -3vw;
+    margin-right: 2vw;
+    font-family: "Font Awesome 6 Free";
+    content: "\f059";
+    font-weight: 900;
+}
+#Settings::before{
+    margin-left: -3vw;
+    margin-right: 2vw;
+    font-family: "Font Awesome 6 Free";
+    content: "\f013";
+    font-weight: 900;
+}
+
+#Account{
+    margin-top: 25%;
+}
+
+#Account:hover, #Contact:hover, #Settings:hover, #Pricing:hover, #login:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+#login{
+    font-size: 1.25rem;
+    position: relative;
+    float: left;
+    color: white;
+    margin-top: 65%;
+    left: 3vw;
+    font-family: roboto;
+}
+#login::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f2f6";
+    font-weight: 900;
+    margin-right: 0.75vw;
+}
+#loadingscreen{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    z-index: 11150;
+    top: 0;
+    left: 0;
+}
+#loader{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: 5px solid #ffffff;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    z-index: 11151;
+}
+#loading-text {
+    color: white;
+    font-family: roboto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    position: fixed;
+    left: 49%;
+    top: 58%;
+    z-index: 11152;
+}
+#loadingpage{
+    visibility: hidden;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px){
+    #banner{
+        bottom: 0;
+        height: 10vh;
+    }
+    #logoIMG{
+        margin-left:46.5%;
+        bottom: 3.5vh;
+    }
+    #LangBtn{
+        height: 10vh;
+        right: 0;
+        margin-right: 6vw;
+    }
+    #QueriesTop{
+        visibility: hidden;
+    }
+    #databaseTop{
+        margin-left: 15px;
+    }
+    .menuContainer{
+        width: 4%;
+        top: 16px;
+
+    }
+    #AboutTop{
+        margin-left: 6vw;
+    }
+    #sidebar{
+        bottom: 0;
+        margin-bottom: 10vh;
+        right: 0.5%;
+        width: 50%;
+        height: 9.5vw;
+        overflow: visible;
+    }
+    #login, #Pricing, #Settings{
+        left: 2px;
+        position: fixed;
+        margin-top:5%;
+        scale: 0.7;
+    }
+    #Pricing{
+        left: 14vw;
+    }
+    #Settings{
+        left: 28vw;
+    }
+}   
+@media (max-width: 408px){
+    #login, #Pricing, #Settings,#logoIMG,#LangBtn,#QueriesTop,#databaseTop,.menuContainer,#AboutTop{
+        scale: 0.7;
+    }
+    #login, #Pricing, #Settings{
+        scale: 0.5;
+    }
+    #sidebar{
+        scale: 1;
+    }
+}
+@media (min-width: 769px){
+    #banner{
+        top: 0;
+    }
+    #sidebar{
+        top: 0;
+    }
+}
