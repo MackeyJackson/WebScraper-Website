@@ -4,7 +4,6 @@ const path = require('path');
 
 const PORT = 8080;
 // to start enter:
-//   cd C:\Users\jacks\Documents\software\HTML\Project 1\
 //   node server.js
 // helps computer thing interpret file protocals :)
 const mimeTypes = {
