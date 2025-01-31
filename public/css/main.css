@@ -202,14 +202,14 @@ body{
     padding: 0;
 }
 
-/* Adjust the container to not interfere with positioning */
+
 .scontainer {
     position: relative;
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: visible; /* Changed from hidden to allow sign visibility */
+    overflow: visible; 
 }
 
 /* main page contents*/
