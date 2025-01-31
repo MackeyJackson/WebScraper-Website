@@ -1,4 +1,4 @@
-// fetch json data for translating//
+
 console.log(document.querySelectorAll('.HowItWorks'));
 let textWords = {
     text1: ["100,000 Websites Scraped", "4.9-Star Average Rating "],
@@ -6,11 +6,11 @@ let textWords = {
     text3: ["50,000 Unique Users     ", "   Automatic Scraping   "]
 };
 const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ,.";
-//set psudo defults
+
 document.getElementById("section0").style.clipPath = 'inset(25vh 0 25vh 0)'
 document.getElementById("divider").style.clipPath = 'inset(0 39.5vw 0 39.5vw)'
 document.getElementById("section1").style.marginTop = "-70vh"
-//loading screen
+
 function loadingscreen(){
     document.getElementById("loadingpage").style.visibility = "hidden "
 };
@@ -398,7 +398,7 @@ function getNextChar(currentChar, targetChar) {
     const enterContainer = document.getElementById("enterContainer");
     const mainContent = document.getElementById("mainContent");
     
-    // Transfer only text1, text2, and text3 elements
+
     ['text1', 'text2', 'text3'].forEach(id => {
         const sourceElement = enterContainer.querySelector(`#${id}`);
         const targetElement = mainContent.querySelector(`#${id}`);
