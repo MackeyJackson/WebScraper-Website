@@ -85,9 +85,9 @@ body{
     height: 100vh;
     position: fixed;
     background-color: red;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
-    backdrop-filter: blur(4px); /* Blur the background */
-    -webkit-backdrop-filter: blur(4px); /* For Safari */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     z-index: 2;
   }
   #loginerror{
